@@ -9,6 +9,9 @@
     <mat-form-field class="formRow">
       <label mat-label for="email">Email:</label>
       <input matInput type="email" id="email" formControlName="email" />
+      <mat-error *ngIf="loginForm.invalid && loginForm.dirty">
+        Enter a valid email and password
+      </mat-error>
     </mat-form-field>
 
     <!-- Password -->
