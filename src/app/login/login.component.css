@@ -1,0 +1,13 @@
+
+.loginFormGroup {
+    width: 280px;
+}
+
+.formRow {
+    display:flex;
+    margin: 10px 0;
+}
+
+.formRow input {
+    margin-left: auto;
+}

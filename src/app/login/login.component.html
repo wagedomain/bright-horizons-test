@@ -1,0 +1,37 @@
+<section>
+  <h2 aria-label="Login Form">Login Form</h2>
+  <form
+    [formGroup]="loginForm"
+    (ngSubmit)="onFormSubmit()"
+    class="loginFormGroup"
+  >
+    <!-- Email Address -->
+    <mat-form-field class="formRow">
+      <label mat-label for="email">Email:</label>
+      <input matInput type="email" id="email" formControlName="email" />
+    </mat-form-field>
+
+    <!-- Password -->
+    <mat-form-field class="formRow">
+      <label mat-label for="password">Password:</label>
+      <input
+        matInput
+        type="password"
+        id="password"
+        formControlName="password"
+      />
+    </mat-form-field>
+
+    <!-- Submit Button -->
+    <div class="formRow">
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="loginForm.invalid"
+      >
+        Login
+      </button>
+    </div>
+  </form>
+</section>
