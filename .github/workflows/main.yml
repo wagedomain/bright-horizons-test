@@ -24,5 +24,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: bright-horizons-test/dist/browser
-          branch: prod  
+          branch: main  
           token: ${{ secrets.GH_TOKEN }}
