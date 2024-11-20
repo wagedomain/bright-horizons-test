@@ -59,7 +59,13 @@
 
   <!-- Completed Step -->
   <mat-step>
-    Application Complete
+    <p>Application Complete</p>
+    <p>Thank you for completing the form. Your values are:</p>
+    <table>
+        <tr><td>First Name: </td><td>{{ this.wizardForm1.controls['firstName'].value }}</td></tr>
+        <tr><td>Last Name: </td><td>{{ this.wizardForm2.controls['lastName'].value }}</td></tr>
+        <tr><td>Email: </td><td>{{ this.wizardForm3.controls['email'].value }}</td></tr>
+    </table>
     <div>
       <button mat-button (click)="stepper.reset()">Reset</button>
     </div>

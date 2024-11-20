@@ -26,6 +26,6 @@ export class LoginComponent implements OnInit {
   }
 
   onFormSubmit() {
-    this.router.navigate(['wizard/1']);
+    this.router.navigate(['wizard']);
   }
 }

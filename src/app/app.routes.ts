@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'wizard/:step',
+    path: 'wizard',
     component: WizardComponent,
   },
   {
